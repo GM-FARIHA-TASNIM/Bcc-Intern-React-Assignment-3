@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #090e14;
+  color: #dbcccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+h2,
+h3 {
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+form,
+.bmi-container,
+.event-container {
+  background: #111a22;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: #eaeaea;
+}
+
+div > form {
+  display: grid;
+  gap: 14px;
+  max-width: 420px;
+  margin: 20px auto;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a2531;
+  color: #f5f5f5;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 6px rgba(0, 180, 216, 0.6);
+}
+
+button {
+  background-color: #00b4d8;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0077b6;
+  transform: scale(1.03);
+}
+
+.bmi-container {
+  max-width: 380px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.bmi-container input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.event-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.event-container input[type="text"] {
+  width: 100%;
+  border: 1px solid #444;
+  background-color: #1a2531;
+  color: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.event-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.event-container th {
+  background: #0077b6;
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #004f73;
+}
+
+.event-container td {
+  border: 1px solid #333;
+  padding: 10px;
+  color: #eaeaea;
+}
+
+.event-container tr:nth-child(even) {
+  background: #101820;
+}
+
+.event-container tr:hover {
+  background: #1a2a36;
+}
+
+.live-data {
+  background: #111a22;
+  max-width: 420px;
+  margin: 25px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  color: #ddd;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  form,
+  .bmi-container,
+  .event-container {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+}
